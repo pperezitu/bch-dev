@@ -1,0 +1,43 @@
+ label {
+    font-size: 1.078em;
+    margin-bottom: 5px;
+    display: block;
+    width: 100%;
+ }
+
+ input[type="text"],
+ input[type="password"] {
+    height: 34px;
+    padding: 11px;
+    box-sizing: border-box;
+    border: 1px solid #CFCFD2;
+    border-radius: 2px;
+    width: 100%;
+ }
+ 
+ .bch-form-box.error input[type="text"] {
+    border: solid 1px #f45516;
+ }
+
+ .bch-form-box > span {
+   opacity: 0;
+   display: block;
+   width: 100%;
+   padding: 6px;
+   font-size: 11px;
+   color: red;
+   font-style: italic;
+ }
+
+ .bch-form-box.error > span {
+   opacity: 1;
+ }
+
+ button {
+    font-size: 14px;
+    padding: 6px 16px;
+    border: 0;
+    color: white;
+    background: #6BAA1F;
+    border-radius: 2px;
+ }
