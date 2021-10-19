@@ -7,14 +7,43 @@
     height: 67px;
     width: 100%;
     background: #002464;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bch-header .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 45px;    
+}
+
+.bch-header h2 {
+    font-size: 18px;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.bch-header .user {
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+}
+
+.bch-header .user .ico-user {
+   margin-left: 10px; 
 }
 
 .bch-nav {
-    width: 200px;
+    width: 250px;
 }
 
 .bch-nav ul {
-    margin: 50px 0 0 30px;
+    margin: 50px 0 0 50px;
 }
 
 .bch-nav ul li {
@@ -35,5 +64,13 @@
 }
 
 .bch-content {
-    width: calc(100% - 200px);
+    width: calc(100% - 250px);
+}
+
+.bch-content .wrapp {
+    margin: 30px 50px 30px 20px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    border: solid 1px #0F8EBA;    
 }
