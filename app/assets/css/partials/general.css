@@ -1,0 +1,39 @@
+.bch-contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.bch-header {
+    height: 67px;
+    width: 100%;
+    background: #002464;
+}
+
+.bch-nav {
+    width: 200px;
+}
+
+.bch-nav ul {
+    margin: 50px 0 0 30px;
+}
+
+.bch-nav ul li {
+    line-height: 24px;
+    display: flex;
+}
+
+.bch-nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 24px;
+    margin-left: 10px;
+    color: #666668;
+    transition: 0.2s;
+}
+.bch-nav ul li a:hover {
+    color: #149DC9;
+}
+
+.bch-content {
+    width: calc(100% - 200px);
+}

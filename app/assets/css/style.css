@@ -1,3 +1,4 @@
+@import "partials/general.css";
 @import "partials/input.css";
 @import "partials/login.css";
 
@@ -8,3 +9,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    margin: 0;
+    background: #F7F7F7;
+}
