@@ -41,3 +41,9 @@
     background: #6BAA1F;
     border-radius: 2px;
  }
+
+ ::placeholder {
+   color:#CFCFD2;
+   font-size: 12px;
+   font-style: italic;
+ }

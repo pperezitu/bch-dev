@@ -1,0 +1,51 @@
+.bch-filtros-tabla {
+    display: flex;
+    margin-bottom: 10px;
+}
+.bch-filtros-tabla .misasignaciones { 
+    font-size: 14px;
+    color: #666668;
+    display: flex;
+    align-items: center;
+}
+.bch-filtros-tabla .misasignaciones span {
+    margin-left: 8px;
+    margin-right: 20px;
+}
+.bch-filtros-tabla .filtropalabra {
+    display: flex;
+    align-items: center;
+}
+.bch-filtros-tabla .filtropalabra input {
+    width: 140px;
+    margin-left: 8px;
+}
+
+.bch-tabla table {
+    border-spacing: 0px;
+    border-collapse: collapse ;
+    width: 100%;
+}
+.bch-tabla table thead { 
+    background: #149DC9;
+    color: #fff;
+}
+.bch-tabla table thead th { 
+    height: 40px;
+    padding: 13px 12px 12px 12px;
+}
+.bch-tabla table tbody td { 
+    padding: 12px;
+    color: #666668;
+    border-bottom: 1px solid #CFCFD2;
+} 
+.bch-tabla table .estado-1 { 
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #E9F2DE;
+    border-radius: 3px;
+}
+.bch-tabla table tbody td:last-child {
+    text-align: center;
+}

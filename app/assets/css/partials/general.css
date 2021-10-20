@@ -39,7 +39,7 @@
 }
 
 .bch-nav {
-    width: 250px;
+    width: 280px;
 }
 
 .bch-nav ul {
@@ -48,10 +48,19 @@
 
 .bch-nav ul li {
     line-height: 24px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.bch-nav ul li ul {
+    margin:0px;
+}
+
+.bch-nav ul li div {
     display: flex;
 }
 
-.bch-nav ul li a {
+.bch-nav ul li div a {
     font-size: 20px;
     text-decoration: none;
     line-height: 24px;
@@ -59,12 +68,12 @@
     color: #666668;
     transition: 0.2s;
 }
-.bch-nav ul li a:hover {
+.bch-nav ul li div a:hover, .bch-nav ul li div a.active {
     color: #149DC9;
 }
 
 .bch-content {
-    width: calc(100% - 250px);
+    width: calc(100% - 280px);
 }
 
 .bch-content .wrapp {
