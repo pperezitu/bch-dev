@@ -3,6 +3,8 @@
 @import "partials/login.css";
 @import "partials/fonts.css";
 @import "partials/tablas.css";
+@import "partials/modal-1.css";
+@import "partials/tabs.css";
 
 * {
     padding: 0;

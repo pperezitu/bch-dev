@@ -70,3 +70,23 @@
     font-style: italic;
     font-weight: 900;
 }
+
+
+h1 { 
+    color:#002464;
+    font-size: 28px;
+    font-weight: normal;
+ }
+ h2 { 
+    color:#002058;
+    font-size: 28px;
+    font-weight: normal;
+ }
+
+ h5 { 
+    color:#333334;
+    font-size: 16px;
+    font-weight: normal;
+ }
+
+ .bold { font-weight: bold; }

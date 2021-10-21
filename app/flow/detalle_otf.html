@@ -16,7 +16,7 @@
                 </svg>
                 <h2>Portal de Oficios Fiscalía</h2>            
             </div>
-            <div class="user">Administrativo 
+            <div class="user">Abogado 
                 <div class="ico-user">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="16" cy="16" r="15.5" fill="#DCF0F7" stroke="white"/>
@@ -45,8 +45,16 @@
                         <a class="active" href="login.html">Bandeja de entrada</a>
                     </div>
 
-                    <ul>
-                        <li>Detalle TOF</li>
+                    <ul style="margin: 30px 0 10px 50px;">
+                        <li>
+                            <div>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H8" stroke="#149DC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15 2H9C8.44772 2 8 2.44772 8 3V5C8 5.55228 8.44772 6 9 6H15C15.5523 6 16 5.55228 16 5V3C16 2.44772 15.5523 2 15 2Z" stroke="#149DC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                                <a class="active" href="">Detalle TOF</a>
+                            </div>
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -85,11 +93,49 @@
 
         <!-- Contenidos -->
         <div class="bch-content">
-            <div class="wrapp">
-                Los Contenidos se agregan aquí
-            </div>
+            <!--div class="wrapp">
+            </div-->
+
+            <div class="tab">
+                <button class="tablinks active" onclick="openCity(event, 'Clasicifacion')">Clasicifación</button>
+                <button class="tablinks" onclick="openCity(event, 'Firma')">Firma</button>
+                <button class="tablinks" onclick="openCity(event, 'Bitacora')">Bitacora</button>
+              </div>
+              <div class="wrapp tab-content">
+                  <div id="Clasicifacion" class="tabcontent" style="display: block">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+              </div>
+              
+              <div id="Firma" class="tabcontent" style="display: none">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p> 
+              </div>
+              
+              <div id="Bitacora" class="tabcontent" style="display: none">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+              </div>
+              </div>
+              
+
         </div>
         <!-- Contenidos / fin -->
     </div>
+    <script>
+        function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+    </script>
 </body>
 </html> 

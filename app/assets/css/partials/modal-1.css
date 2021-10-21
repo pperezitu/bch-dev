@@ -1,0 +1,99 @@
+
+.modal-content {
+    display: flex;
+}
+.modal-content.open {
+    /* display: block; */
+}
+.modal-content.close { 
+    display: none;
+}
+.modal-content .backlight { 
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #000;
+    opacity: 0.5;
+    top: 0px;
+    bottom: 0px;
+    left:0px;
+    right: 0px;
+    z-index: 100;
+}
+.modal-content .modal {
+    display: block;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 101;
+}
+
+/* Tamaños modal  */
+.modal-content .modal.w800 {
+    width: 800px;
+    height: auto;
+    left: calc(50% - 400px);
+    top: calc(50% - 250px);
+}
+.modal-content .error {
+    width: 600px;
+    height: 200px;
+    left: calc(50% - 300px);
+    top: calc(50% - 100px);
+ }
+
+.modal-content .modal .modal-head {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #285B9B;
+    padding: 26px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.bch-cont-form {
+    display: block;
+    padding: 26px;
+}
+.bch-row-form {
+    display: flex;
+    align-items: center;
+}
+.bch-row-form .bch-one-col { 
+    width: 100%; 
+    padding: 10px 20px 10px 10px;
+}
+.bch-row-form .bch-two-col {
+    width: 50%;
+    display: flex;
+    padding: 10px 20px 10px 10px;
+}
+.bch-row-form .bch-two-col label { 
+    width: 50%; 
+}
+.bch-row-form .bch-two-col input { 
+    width: 50%; 
+}
+
+.modal-content .modal.error {
+
+}
+
+.modal-content .modal.error .modal-head { 
+    display: flex; 
+    border-bottom: 0;
+}
+.modal-content .modal.error .modal-head h5 {
+    text-align: center;
+    width: 100%;
+}
+.modal-content .modal.error p {
+    text-align: center;
+    width: 100%;
+}
+.modal-content .modal.error .cont-error {
+    text-align: center;
+    display: flex;
+    padding: 30px;
+    justify-content: space-evenly;
+}

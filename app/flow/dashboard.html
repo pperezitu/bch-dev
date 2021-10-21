@@ -105,12 +105,31 @@
                         <thead>
                             <tr>
                                 <th></th>
-                                <th>TOF</th>
-                                <th>Fecha Ingreso</th>
-                                <th>Estado</th>
-                                <th>Responsable</th>
-                                <th>Vencimiento</th>
-                                <th>Ultima Modificación</th>
+                                <th>TOF 
+                                    <a href="" class="bch-sort-down">
+                                        <img src="../assets/img/table-arrow.png" alt="orden descendente" width="11" height="7">
+                                    </a>
+                                </th>
+                                <th>Fecha Ingreso
+                                    <a href="" class="bch-sort-up">
+                                        <img src="../assets/img/table-arrow.png" alt="orden ascendente" width="11" height="7">
+                                    </a></th>
+                                <th>Estado
+                                    <a href="" class="bch-sort-down">
+                                        <img src="../assets/img/table-arrow.png" alt="orden descendente" width="11" height="7">
+                                    </a></th>
+                                <th>Responsable
+                                    <a href="" class="bch-sort-down">
+                                        <img src="../assets/img/table-arrow.png" alt="orden descendente" width="11" height="7">
+                                    </a></th>
+                                <th>Vencimiento
+                                    <a href="" class="bch-sort-down">
+                                        <img src="../assets/img/table-arrow.png" alt="orden descendente" width="11" height="7">
+                                    </a></th>
+                                <th>Ultima Modificación
+                                    <a href="" class="bch-sort-down">
+                                        <img src="../assets/img/table-arrow.png" alt="orden descendente" width="11" height="7">
+                                    </a></th>
                                 <th>
                                     <svg width="24" height="6" viewBox="0 0 24 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M3 6C4.65685 6 6 4.65685 6 3C6 1.34315 4.65685 0 3 0C1.34315 0 0 1.34315 0 3C0 4.65685 1.34315 6 3 6Z" fill="white"/>
@@ -136,7 +155,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><div class="estado-1"></div></td>
+                                <td><div class="estado-2"></div></td>
                                 <td>2021-000003</td>
                                 <td>01/02/2016 15:35:00</td>
                                 <td>Pendiente de Informa</td>
@@ -170,6 +189,127 @@
             </div>
         </div>
         <!-- Contenidos / fin -->
+
+        <!-- Contenido modal Ingreso Oficio -->
+        <div class="modal-content close" id="">
+            <div class="backlight"></div>
+            <div class="modal w800">
+                <div class="modal-head">
+                    <h2>Ingreso Oficio</h2>
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#149DC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 9L9 15" stroke="#149DC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 9L15 15" stroke="#149DC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </a>
+                </div>
+                <form>
+                    <div class="bch-cont-form">
+                        <div class="bch-row-form">
+                            <div class="bch-one-col">
+                                <label><input type="checkbox" id="cbox1" value="first_checkbox"> TOF relacionado</label>
+                            </div>
+                        </div>
+                        <div class="bch-row-form">    
+                            <div class="bch-two-col">
+                                <label>Fecha recepción</label>
+                                <input type="text" disabled="disabled" class="" value="04-10-2021">  
+                            </div>
+                            <div class="bch-two-col">
+                                <label>Clasificación</label>
+                                <select name="" id="">
+                                    <option value="defecto">Seleccionar</option>
+                                    <option value="uno">uno</option>
+                                    <option value="dos">dos</option>
+                                    <option value="tres">tres</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="bch-row-form">    
+                            <div class="bch-two-col">
+                                <label>ROL / RIT </label>
+                                <input type="text" class="" value="04-10-2021">  
+                            </div>
+                            <div class="bch-two-col">
+                                <label>Localidad</label>
+                                <select name="" class="custom-select" id="">
+                                    <option value="defecto">Seleccionar</option>
+                                    <option value="uno">uno</option>
+                                    <option value="dos">dos</option>
+                                    <option value="tres">tres</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="bch-row-form">    
+                            <div class="bch-two-col">
+                                <label>RUC</label>
+                                <input type="text" class="" value="04-10-2021">  
+                            </div>
+                            <div class="bch-two-col">
+                                <label>Tribunal</label>
+                                <select name="" id="">
+                                    <option value="defecto">Seleccionar</option>
+                                    <option value="uno">uno</option>
+                                    <option value="dos">dos</option>
+                                    <option value="tres">tres</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="bch-row-form">    
+                            <div class="bch-two-col">
+                                <label>Año</label>
+                                <input type="text" class="" value="04-10-2021">  
+                            </div>
+                            <div class="bch-two-col">
+                                <label>Abogado Fiscalia</label>
+                                <select name="" id="">
+                                    <option value="defecto">Seleccionar</option>
+                                    <option value="uno">uno</option>
+                                    <option value="dos">dos</option>
+                                    <option value="tres">tres</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="bch-row-form">    
+                            <div class="bch-one-col">
+                                <label>Fecha oficio</label>
+                                <input type="date" class="">  
+                            </div>
+                        </div>
+                        <div class="bch-row-form">    
+                            <div class="bch-one-col">
+                                <label>Cargar Oficio</label>
+                                <input type="file" class="" value="">  
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Contenido modal Ingreso Oficio / fin-->
+        <!-- Contenido modal error informción existente-->
+        <div class="modal-content open" id="">
+            <div class="backlight"></div>
+            <div class="modal error">
+                <div class="modal-head">
+                    <h5 class="bold">Existe otro registro asociado a la misma información</h5>
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#149DC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 9L9 15" stroke="#149DC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 9L15 15" stroke="#149DC9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </a>
+                </div>
+                <p>Validar datos o ingresa al buscasdor para gestionar Oficio Existente</p>
+                <div class="cont-error">
+                    <button class="info">Ir al buscador</button>
+                    <button class="primary">Continuar</button>
+                </div>
+            </div>
+        </div>    
+        <!-- Contenido modal error informción existente / Fin-->
     </div>
 </body>
 </html> 

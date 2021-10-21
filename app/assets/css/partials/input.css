@@ -7,12 +7,16 @@
 
  input[type="text"],
  input[type="password"] {
-    height: 34px;
+    height: 30px;
     padding: 11px;
     box-sizing: border-box;
     border: 1px solid #CFCFD2;
     border-radius: 2px;
     width: 100%;
+ }
+ input[type="text"]:disabled,
+ input[type="password"]:disabled, {
+   background: #EEEEF1;
  }
  
  .bch-form-box.error input[type="text"] {
@@ -33,17 +37,67 @@
    opacity: 1;
  }
 
- button {
-    font-size: 14px;
-    padding: 6px 16px;
-    border: 0;
+button { 
+  font-size: 14px;
+  padding: 6px 16px;
+  border-radius: 2px;
+}
+
+ button.success {
+    border: 1px solid #6BAA1F;
     color: white;
     background: #6BAA1F;
-    border-radius: 2px;
  }
+ button.success:hover { 
+    background: #649E1D;
+ }
+
+ button.info {
+    border: 1px solid #149DC9;
+    color: white;
+    background: #149DC9;
+ }
+ button.info:hover { 
+    background: #0F8DBA;
+ }
+
+ button.primary {
+    border: 1px solid #234E85;
+    color: #fff;
+    background: #234E85;
+ }
+ button.primary:hover { 
+    background: #002464;
+ }
+
+ button.danger {
+    border: 1px solid #F45516;
+    color: white;
+    background: #F45516;
+ }
+ button.danger:hover { 
+    background: #D11D1A;
+ }
+ 
+ button.default {
+  color: #285B9B;
+  background: #FFFFFF;
+  border: 1px solid #D2D2D4;
+}
+button.default:hover { 
+  border: 1px solid #333334;
+}
+
 
  ::placeholder {
    color:#CFCFD2;
    font-size: 12px;
    font-style: italic;
  }
+
+ select { 
+   height: 30px;
+   border: 1px solid #CFCFD2;
+   padding: 6px 16px;
+   color: #666668
+}
